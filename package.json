@@ -17,6 +17,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
+    "@electron/remote": "^2.0.1",
     "electron": "^15.3.0"
   }
 }

@@ -1,18 +1,23 @@
+<!--
+ * @Author: MrAlenZhong
+ * @Date: 2021-11-04 11:50:23
+ * @LastEditors: MrAlenZhong
+ * @LastEditTime: 2021-11-09 16:54:53
+ * @Description: 
+-->
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link href="./styles.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link href="./styles.css" rel="stylesheet" />
     <title>Hello World!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <button id="openFile" onclick="openDialog()" >打开文件</button>
+    <button  onclick="saveDialog()" >保存</button>
+    <button  onclick="showMessageDialog()" >弹出消息提示</button>
+    <button onclick="openMenu()">打开菜单</button>
+    <button onclick="accessBaidu()">访问百度</button>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
